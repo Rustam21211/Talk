@@ -19,3 +19,7 @@ async function pasteText() {
     var clipboardText = await navigator.clipboard.readText();
     document.getElementById("inputTextArea").value = clipboardText;
 }
+function clearText() {
+    document.getElementById("inputTextArea").value = "";
+    document.getElementById("outputTextArea").value = "";
+}
